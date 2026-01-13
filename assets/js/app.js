@@ -12,19 +12,19 @@ function startupload(){
     loadPage(pageToUse);
     loadPageNav(navToUse);    
     // Update URL and history (optional but recommended)
-    history.pushState({ page: 'index' }, null, `balls/index`);
+    history.pushState({ page: 'index' }, null, `/index`);
 }
 
 async function loadPage(pageName) {
     // Fetch HTML content (e.g., home.html, about.html)
-    const response = await fetch(`profjapiegreeffweb/assets/pages/${pageName}.html`);
+    const response = await fetch(`assets/pages/${pageName}.html`);
     const html = await response.text();
     contentContainer.innerHTML = html;
 }
 
 async function loadPageNav(navName){
     // Fetch HTML content (e.g., indexnav.html)
-    const navresponse = await fetch(`profjapiegreeffweb/assets/pages/${navName}.html`);
+    const navresponse = await fetch(`assets/pages/${navName}.html`);
     const navhtml = await navresponse.text();
     navContentContainer.innerHTML = navhtml;
 }
@@ -41,7 +41,7 @@ function navigate(event, pageName, navName) {
         behavior: 'smooth'
     });
     // Update URL and history (optional but recommended)
-    history.pushState({ page: pageName }, null, `profjapiegreeffweb/${pageName}`);
+    history.pushState({ page: pageName }, null, `/${pageName}`);
 }
 
 // Function to handle the click event
