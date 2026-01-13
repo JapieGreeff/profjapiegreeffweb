@@ -1,5 +1,8 @@
 const contentContainer = document.getElementById('content-container');
 const navContentContainer = document.getElementById('nav-content-container');
+const navContentContainer2 = document.getElementById('nav-content-container2');
+const navContentContainer3 = document.getElementById('nav-content-container3');
+const navContentContainer4 = document.getElementById('nav-content-container4');
 
 function startupload(){
     pageToUse = 'index';
@@ -27,6 +30,15 @@ async function loadPageNav(navName){
     const navresponse = await fetch(`assets/pages/${navName}.html`);
     const navhtml = await navresponse.text();
     navContentContainer.innerHTML = navhtml;
+    const navresponse2 = await fetch(`../assets/pages/${navName}.html`);
+    const navhtml2 = await navresponse.text();
+    navContentContainer.innerHTML = navhtml2;
+    const navresponse3 = await fetch(`../../assets/pages/${navName}.html`);
+    const navhtml3 = await navresponse.text();
+    navContentContainer.innerHTML = navhtml3;
+    const navresponse4 = await fetch(`../../../assets/pages/${navName}.html`);
+    const navhtml4 = await navresponse.text();
+    navContentContainer.innerHTML = navhtml4;
 }
 
 function navigate(event, pageName, navName) {
