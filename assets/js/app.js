@@ -17,14 +17,14 @@ function startupload(){
 
 async function loadPage(pageName) {
     // Fetch HTML content (e.g., home.html, about.html)
-    const response = await fetch(`/assets/pages/${pageName}.html`);
+    const response = await fetch(`profjapiegreeffweb/assets/pages/${pageName}.html`);
     const html = await response.text();
     contentContainer.innerHTML = html;
 }
 
 async function loadPageNav(navName){
     // Fetch HTML content (e.g., indexnav.html)
-    const navresponse = await fetch(`/assets/pages/${navName}.html`);
+    const navresponse = await fetch(`profjapiegreeffweb/assets/pages/${navName}.html`);
     const navhtml = await navresponse.text();
     navContentContainer.innerHTML = navhtml;
 }
