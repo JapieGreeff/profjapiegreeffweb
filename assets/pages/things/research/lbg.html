@@ -1,0 +1,155 @@
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+                            <div class="container">
+                                <header class="major">
+                                    <h2>Location Based Games</h2>
+                                </header>				
+                            </div>
+
+                            <section>
+								<div class="container">
+									<p>As part of my doctoral studies, I developed a series of location-based games (LBGs), specifically categorized as Alternate Reality Games (ARGs), to gamify the academic experience for Electrical Engineering students at the University of Johannesburg (UJ). The primary application of this work was a system used during annual capstone project presentation days to facilitate engagement between students, faculty, and the public. The work also expanded to be used in other settings, like the 2016 Great Geek Challenge which was used at the South Africa ICON Conference, and then at two academic conferences in the Netherlands in 2018.</p>
+								</div>
+							</section>
+                             
+                            <section>
+								<div class="container">
+                                    <h4>Theoretical Foundations</h4>
+									<p>The design of these systems was anchored in several key theoretical frameworks:</p>
+                                    <ul>
+                                        <li>Self-Determination Theory (SDT): The LBG provided an environment for students to demonstrate mastery, interact with their community, and exercise autonomy by moving freely through a stream of engineering knowledge.</li>
+                                        <li>Gamification and ARGs: Drawing on Deterding et al., the work defined gamification as using game elements in non-game contexts to leverage natural desires for socialization and achievement. Following Henry Jenkins, the games utilized transmedia storytelling, playing out in both virtual and real-world spaces.</li>
+                                        <li>McGonigal's ARG Classifications: I utilized Jane McGonigal's classifications of ARGs, specifically combining live event and conceptual approaches where real-world actions trigger game events.</li>
+                                        <li>The SCAMP Framework: To evaluate feedback mechanics, the design utilized the SCAMP (social, cognitive, affective, motivational, progression) framework. These elements were further mapped to Bloom's taxonomy to ensure the game mechanics targeted specific cognitive behaviors, such as remembering study areas or evaluating research.</li>
+                                        <li>The Jen Ratio: To measure the social well-being of the game environment, I adopted the Jen ratio. I developed an adjusted Jen ratio (JrAdj) to account for neutral interactions and prevent mathematical errors when only single interactions were recorded, ensuring a baseline measurement for social health.</li>
+                                    </ul>
+								</div>
+							</section>
+
+                             <section>
+								<div class="container">
+                                    <h4>Design and Technical Implementation</h4>
+									<p>The systems were designed to be non-intrusive and accessible, following the Magellan Consortium's guidelines for physical environments. Key design considerations included:</p>
+                                    <ul>
+                                        <li>Technology: Instead of a dedicated mobile app, I used an HTML5 responsive design (built on a .Net MVC5 architecture) to ensure platform independence and low barriers to entry.</li>
+                                        <li>Location Mapping: While beacons were considered, the system ultimately used QR codes placed on project posters. This allowed students to set up their projects dynamically while players used their mobile devices only for explicit interactions, minimizing distractions and potential physical hazards.</li>
+                                        <li>Gameplay Mechanics: The core loop involved players interacting with presenters and scanning QR "interaction tokens". Players could earn badges for visiting specific study areas and "focus badges" for completing related clusters of projects (e.g., the "Son of Shannon" badge for interacting with Information Theory and Signal Processing projects)</li>
+                                    </ul>
+								</div>
+							</section>
+                             
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/locationGameAreaCombined.png" alt="" style="width : 100%;" /></a>							
+                                    <h4>Mapping the location onto the campus layout</h4>
+									<p>The physical location the game was played for the implementations that formed part of my PhD was the campus of the University of Johannesburg.</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">
+																	
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/scanInteraction.jpg" alt="" /></a>	
+											<div class="inner">
+												<h4>Anonymous Interaction Capturing</h4>
+												<p>
+													As attendees moved through the poster presentations they could capture the interactions they had with students that were presenting, allowing us to capture the Jen of the physical space.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/favouriteVote.jpg" alt="" /></a>	
+											<div class="inner">
+												<h4>Tracking your favourite presentation</h4>
+												<p>
+													As attendees moved through the poster presentations they also capture their favourite projects, allowing for sponsored prizes to be awarded to students.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+                            
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/lbgQuestsCombined.png" alt="" style="width : 100%;" /></a>							
+                                    <h4>Collecting badges and completing quests</h4>
+									<p>Different themes were identified in the projects that students presented, and scanning projects with different themes allowed players to collect badges, score points, and complete quests that required a combination of badges.</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <h4>Evolution of Prototypes</h4>
+									<p>The design of these systems evolved over time through several iterative cycles that were used in a number of different implementations.:</p>
+                                    <ul>
+                                        <li>Initial Prototype (2016): Deployed for the 2016 Project Day, this version focused on basic interaction tracking and quest completion via QR codes. The viability of this project was also tested during the 2016 Icon Conference where there were also a number of quests set up for attendees to capture by scanning QR codes for different vendors.</li>
+                                        <li>Prototype 2 (2017): Tested during a mock seminar day, this iteration revealed that LBG data loses value when players are stationary, highlighting the importance of human movement to the LBG concept.</li>
+                                        <li>Prototype 3 (2017): Used for the year-end Project Day, this version introduced features like hierarchical badges to create quests, public/private commenting, and the ability for players to vote for their favorite projects.</li>
+                                        <li>Prototype 4 (2018): In collaboration with the University of Twente, the underlying engine was "re-skinned" and implemented for two international conferences: Health by Tech VIII and Narrative Matters 2018. This demonstrated the system’s flexibility in gamifying different professional and academic contexts beyond the original engineering scope.</li>
+                                    </ul>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/GreatGeekChallenge.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>Prototype 1 applied at the Great Geek Challenge</h4>
+									<p>The first prototype was trialed at ICON 2016 and the game was the Great Geek Challenge. In it there were a number of activities players had to complete for points. In this prototype there was just the points and a quest list, and a pixel art avatar would gain more and more equipment as the player increased their score.</p>
+								</div>
+							</section>
+
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/HealthByTech.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>Prototype 4 applied at the 2018 Health By Tech Conference</h4>
+									<p>The final prototype was streamlined and set up in such a way that the front end design was relatively easy to re-skin so that the underlying engine could be used for other location based games in other contexts. The Health By Tech conference was held in the Netherlands and was the first trial of the re-skinning process to see how easy it would be to change the system. It turned out to be really easy</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/HealthByTechQuests.jpg" alt="" /></a>	
+											<div class="inner">
+												<h4>The Quests made up of different badges that were set up for Health by Tech 2018.</h4>
+												<p>
+													The same engine was used for this implementation, so it was just a matter of dividing the academic papers and posters that were presented during the conference into new themes and combining them into thematic quests.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                             <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/HealthByTech2.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>Benefits of using a location based game for a conference app</h4>
+									<p>When applying the system to the conference it also became clear that the system could also be used as a conference management app, since each presentation would already be identified as being in a specific location, one could simply create duplicate locations which then represented different sessions making it very effective, not only for increasing engagement.</p>
+								</div>
+							</section>
+
+                             <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/NarrativeMatters.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>Final version was employed at the Narrative Matters 2018 Conference</h4>
+									<p>Once I realised that the system could be an effective conference management application in addition to a location based game system, it was employed again soon after to the Narrative Matters conference, also in the Netherlands, to great effect.</p>
+								</div>
+							</section>
+
+
+					</div>

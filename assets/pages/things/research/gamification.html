@@ -1,0 +1,186 @@
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+                            <div class="container">
+                                <header class="major">
+                                    <h2>Gamification System</h2>
+                                </header>				
+                            </div>
+
+                            <section>
+								<div class="container">
+									<p>As part of my doctoral studies, I developed a gamification based system that comprised of a number of gamefully designed components. Here I will describe the underlying system that the Location Based Games, Tender Game, and the Challenge System were based on. The goal of this system was to attempt to enrich the experience of the Capstone Project module in the Electrical and Electronic Engineering Bachelor's degree program at the University of Johannesburg. I developed and administered the system between 2016 and 2020. After 2020 a new system was developed that I consulted on, but I was not the primary designer of that system.</p>
+								</div>
+							</section>
+                             
+                            <section>
+								<div class="container">
+                                    <h4>Theoretical Foundations</h4>
+									<p>The design of these systems was anchored in several key theoretical frameworks:</p>
+                                    <ul>
+                                        <li>Self-Determination Theory (SDT): Through the work of Ryan and Deci it was determined that for students to feel intrinsic motivation to complete a task as complex as a capstone project they needed to feel that their choice matters (Autonomy), that they are part of a greater community that shares their experience (Relatedness/Community), and that they are successfully mastering challenges (Competence/Mastery).</li>
+                                        <li>Authentic Learning: I grounded the capstone journey in the principles of authentic learning, where learning is rooted in real-world problems and discourse among learners. I followed the guidance of Herrington, who suggests that online spaces can be authentic if they simulate real-life activities and provide access to expert performance. By framing project selection as a "tender" process, I allowed students to fill multiple roles and perspectives similar to what they would encounter in the South African engineering industry.</li>
+                                        <li>Bloom's Affective Domain and Gradients of Abstraction: While engineering is often viewed through the cognitive domain, I focused on the affective domain to explore the internalisation of professional values. I utilized Floridi's concept of Gradients of Abstraction rather than discrete levels to reflect that the transition from "Receiving" information to "Characterising" it (acting according to internalised values) is non-linear and complex. As students experienced more cognitive and emotional load, I recognized that more complex interventions were required.</li>
+                                        <li>Gameful Design Theory: As will be seen, there are differences between Gameful Design, Gamification, Serious Games, Simulations, etc. that create different categories of interventions which ended up being a very interesting area of the literature to dive into. I will focus here more on the Gamification aspect, but in my full thesis there is an extensive literature review of the different areas. </li>
+                                    </ul>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/EducationalTheoryApproach.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Integrating the theoretical foundations into a holistic view</h4>
+												<p>
+													As this was my PhD work, there were other theories and concepts covered, but when it came to the gamification elements, this is they way I conceptualised how they all work together to engage students.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <h4>Design</h4>
+									<p>The systems were built to interact with and complement the academic process that took place in the capstone project module. In understanding the design, the following considerations were critical:</p>
+                                    <ul>
+                                        <li>Stakeholder Interaction: In order to enrich the process that was already in place, it was important to understand what sorts of interaction take place between the different stakeholders already in the system so that these could be enhanced.</li>
+                                        <li>The Academic Timeline: As the system was built to enrich the experience through the course of the year, it became clear that the interactions that take place change over time with various different goals. The interactions were therefor mapped onto the academic year and the conceptual journey that the student goes on was mapped, taking into account authentic learning principles.</li>
+                                        <li>Data Access: As there was a single system that interacted with the learning management system, it was clear that different stakeholders would require different kinds of access at different times. The system was therefor designed with this in mind.</li>
+                                        <li>Easy Access: To ensure that users with different devices could access the system seamlessly, whether they are on mobile or desktop devices, the system was designed to be a .NET MVC5 system that was designed to be responsive and require no installation on user devices.</li>
+                                        <li>Fit For Purpose Interventions: As the students moved through different phases through the course of the year, different intervention components were used to support their experience at different times.</li>
+                                    </ul>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/StakeholderInteractions.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Inital Mapping of Stakeholder Interactions</h4>
+												<p>
+													Although there were subtle changes picked up as the prototypes were refined over time, this was the initial mapping of stakeholder interactions that would be supported by the system. 
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/GamificationMappedToAcademicYear.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>Initial Mapping of the Student's Journey Through the Academic Year</h4>
+									<p>Exploring the work that was done through the course of the academic year, it became clear that the student went through three distinct phases during the year:</p>
+                                    <ul>
+                                        <li>The Student Phase: Here the student is still in the mindset of writing tests and examinations from their previous courses, and they have not yet been given a large project to do in their studies.</li>
+                                        <li>The Journeyman Phase: In this phase, the student has moved past the student mindset where they can cram for the exam. They are realising that a large project needs a different approach. For most of the students, this will be their first large project.</li>
+                                        <li>The Candidate Phase: In this phase, students have completed their first large project, and if successful they are now one step closer to their professional regis￾tration. Candidates have a professional responsibility to also be examples to the students who will come after them, so in this phase students will have the chance to show off what they know to junior students.</li>
+                                    </ul>
+                                    <p>In each of these phases, there were a number of points identified where different interventions could be used to enrich the experience for the students, as can be seen in the image above. The final mapping of where different system interventions would be active can be seen below. The details of the <a href="/index.html" onclick="navigate(event, 'things/software/lbg', 'things/software/lbgnav')">Location Based Games</a> are documented on that page, so here we will focus on the Tender Game and the Challenge Based System.</p>
+								    <a href="#" class="image"><img src="../../../../images/CourseStructureAndDeadlines.png" alt="" style="width : 100%;" /></a>							
+                                </div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/Architecture1.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Front End Architecture</h4>
+												<p>
+													As the system was built using MVC, RAZOR was used to keep the design simple and dynamic.  
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/OWIN Pipeline.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Authentication</h4>
+												<p>
+													There was some complexity with the authentication used, since student registrations were not synchronised with what was happening on the learning management system and in the class, so in the end we needed to create access for students that weren't yet registered for the class, but it turned out to be effective to manage that way once the system was implemented after the first prototype. 
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+                            
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/AccessControl.png" alt="" style="width : 100%;" /></a>							
+                                    <h4>Access Control by Role and State</h4>
+									<p>As the system was available all year to also act as a social network for students, the availability of gamified elements was controlled via a state based system that controlled what was visible based on the role of the user and the state of the system. When for example the system was in the pre-selection state for the Tender Game, then students, supervisors and administrators would each see the relevant components needed for them to fulfill their roles. When the tendering period was over and the post-selection period kicked off, the views would be different again, but all URLs were persistent.</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/ResponsiveDesign.png" alt="" style="width : 100%;" /></a>							
+                                    <h4>Responsive Design</h4>
+									<p>The design of the system was responsive and was able to be used on mobile, tablet and desktop devices without issue.</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/DeltaOverlay1.png" alt="" style="width : 100%;" /></a>							
+                                    <h4>Iterative Development with Design Science Research</h4>
+									<p>The design of the system was refined over 4 iterations with each prototype progressively made better and adding more functionality. One of the techniques used to explore how the system could be improved was that of Delta Overlays as seen above, where each page is captured as an image, and members of the userbase could mark what they thought would make the system better, what should be moved, what should be added, what should be removed, etc. A number of collaborative design sessions were held with users and experts after each release was tested.</p>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/admindashboard.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Administration</h4>
+												<p>
+													The system included a full administrative dashboard that allowed the state and all data in the system to be easily managed. This allowed for administrators other than myself to manage some of the activities without requiring interaction with me.  
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+									<div class="features">							
+                                        <article>
+										<a href="#" class="image"><img src="../../../../images/NewRegistrationProcess.png" alt="" /></a>	
+											<div class="inner">
+												<h4>Registration Process</h4>
+												<p>
+                                                    The only part in the first two prototypes that did require some interaction with the database directly was in the creation of users that were not yet registered officially in the learning management system, as this could not be synchronised automatically. In the third prototype however this was streamlined into a system where users could register themselves for different roles and they just needed to be verified, so no direct database interaction was needed.
+												</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+                            <section>
+								<div class="container">
+                                    <a href="#" class="image"><img src="../../../../images/ActivitiesInPhDStudy.jpg" alt="" style="width : 100%;" /></a>							
+                                    <h4>PhD Activities and Evaluations</h4>
+									<p>The system was developed over four iterations during my PhD with some activities continuing after I had completed my study. This table shows the work that was done between iterations, what was evaluated, and how many users and participants were involved over the years.</p>
+								</div>
+							</section>
+					</div>
