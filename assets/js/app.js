@@ -12,7 +12,7 @@ function startupload(){
     loadPage(pageToUse);
     loadPageNav(navToUse);    
     // Update URL and history (optional but recommended)
-    history.pushState({ page: 'index' }, null, `/index`);
+    history.pushState({ page: 'index' }, null, `profjapiegreeffweb/index`);
 }
 
 async function loadPage(pageName) {
@@ -41,7 +41,7 @@ function navigate(event, pageName, navName) {
         behavior: 'smooth'
     });
     // Update URL and history (optional but recommended)
-    history.pushState({ page: pageName }, null, `/${pageName}`);
+    history.pushState({ page: pageName }, null, `profjapiegreeffweb/${pageName}`);
 }
 
 // Function to handle the click event
