@@ -12,7 +12,7 @@ function startupload(){
     loadPage(pageToUse);
     loadPageNav(navToUse);    
     // Update URL and history (optional but recommended)
-    history.pushState({ page: 'index' }, null, `profjapiegreeffweb/index`);
+    history.pushState({ page: 'index' }, null, `balls/index`);
 }
 
 async function loadPage(pageName) {
