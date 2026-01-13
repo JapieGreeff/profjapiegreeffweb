@@ -13,7 +13,10 @@ function startupload(){
         navToUse = pageToUse+'nav';
     }
     loadPage(pageToUse);
-    loadPageNav(navToUse);    
+    loadPageNav(navToUse);  
+    loadPageNav2(navToUse);
+    loadPageNav3(navToUse);
+    loadPageNav4(navToUse);
     // Update URL and history (optional but recommended)
     history.pushState({ page: 'index' }, null, `/index`);
 }
@@ -30,22 +33,39 @@ async function loadPageNav(navName){
     const navresponse = await fetch(`assets/pages/${navName}.html`);
     const navhtml = await navresponse.text();
     navContentContainer.innerHTML = navhtml;
+}
+
+async function loadPageNav2(navName){
+    // Fetch HTML content (e.g., indexnav.html)
     const navresponse2 = await fetch(`../assets/pages/${navName}.html`);
     const navhtml2 = await navresponse.text();
-    navContentContainer.innerHTML = navhtml2;
+    navContentContainer2.innerHTML = navhtml2;
+}
+
+async function loadPageNav3(navName){
+    // Fetch HTML content (e.g., indexnav.html)
     const navresponse3 = await fetch(`../../assets/pages/${navName}.html`);
     const navhtml3 = await navresponse.text();
-    navContentContainer.innerHTML = navhtml3;
+    navContentContainer3.innerHTML = navhtml3;
+}
+
+async function loadPageNav4(navName){
+    // Fetch HTML content (e.g., indexnav.html)
     const navresponse4 = await fetch(`../../../assets/pages/${navName}.html`);
     const navhtml4 = await navresponse.text();
-    navContentContainer.innerHTML = navhtml4;
+    navContentContainer4.innerHTML = navhtml4;
 }
+
+
 
 function navigate(event, pageName, navName) {
     event.stopPropagation()
     event.preventDefault(); // Prevent full page reload
     event.stopPropagation()
     loadPageNav(navName);
+    loadPageNav2(navName);
+    loadPageNav3(navName);
+    loadPageNav4(navName);
     loadPage(pageName);
     window.scrollTo({
         top: 0,
