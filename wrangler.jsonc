@@ -4,9 +4,10 @@
 // You MUST change “name” to your Cloudflare Workers project name.
 //     should change “compatibility_date” to the date last deployed.
 {
-    "$schema": "node_modules/wrangler/config-schema.json",
+    //"$schema": "node_modules/wrangler/config-schema.json",
     "name": "bold-salad-90cc",
-    "compatibility_date": "2025-08-27",
+    "compatibility_date": "2026-02-03",
+    "main": "/index.html",
     "preview_urls": false,
     "assets": {
         "directory": "./"
