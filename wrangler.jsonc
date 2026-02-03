@@ -11,5 +11,11 @@
     "preview_urls": false,
     "assets": {
         "directory": "./"
-    }
+    },
+    "r2_buckets": [
+        {
+            "binding": "MEDIA",
+            "bucket_name": "profjapiegreeffassets"
+        }
+    ]
 }
