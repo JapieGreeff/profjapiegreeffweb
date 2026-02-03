@@ -7,7 +7,7 @@
     //"$schema": "node_modules/wrangler/config-schema.json",
     "name": "bold-salad-90cc",
     "compatibility_date": "2026-02-03",
-    "main": "/index.html",
+    "main": "./index.html",
     "preview_urls": false,
     "assets": {
         "directory": "./"
