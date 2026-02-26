@@ -376,6 +376,7 @@ ul.feature-icons li {
     border: 1px solid var(--glass-border);
     text-align: center;
     transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
 }
 
 ul.feature-icons li:hover {
